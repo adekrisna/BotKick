@@ -126,11 +126,11 @@ def SEND_MESSAGE(op):
             if msg.contentType == 0:
                 #if "gname:" in msg.text:
 #--------------------------------------------------------------
-                if msg.text == "Mulai":
+                if msg.text == "Kick":
                     print "ok"
-                    _name = msg.text.replace("Mulai","")
+                    _name = msg.text.replace("Kick","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Halooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo")
+                    sendMessage(msg.to,"Waktunya Untuk Meng Kick Orang Dari Group Ini wkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkwkwwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkw")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -145,7 +145,7 @@ def SEND_MESSAGE(op):
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
                             except:
-                                sendText(msg.to,"error")
+                                sendText(msg.to,"error")wkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkwkkwkwkwkwkwkwkwkwkwkwkwkwkwkwk
 #-------------------------------------------------------------			
 		if msg.text == "Salken all":
                     start = time.time()
